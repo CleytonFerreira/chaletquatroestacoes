@@ -1,0 +1,307 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+
+/*navbar*/
+.top{
+	width: 100%;
+	height: 40px;
+	background-color: #630000;
+}
+
+.hidden-menu{
+	font-family: 'Cormorant Garamond', serif;
+	font-weight: lighter;
+	background-color: #630000;
+	width: 100%;
+	height: 0;
+	transition: height 0.5s;
+}
+
+.visible-menu{
+	margin-top: 0px;
+	height: 180px;
+	transition: height 0.5s;
+}
+
+.hidden-menu ul{
+	list-style-type: none;
+	text-align: center;
+}
+
+.hidden-menu ul li{
+	padding: 20px;
+}
+
+.hidden-menu ul li a{
+	text-decoration: none;
+	color: #fff;
+}
+
+.toggler{
+	text-align: center; 
+	float: right; 
+	height: 100%;
+	width:40px; 
+	background-color: #000;
+	top:0;
+}
+
+.icon{
+	font-size: 20px;
+	padding: 10px;
+	color: #fff;
+}
+
+
+/*slider*/
+.slider-container{
+	position: relative;
+	width: 100%;
+	height: 600px;
+}
+
+.slider > div{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+
+#slide1{
+	background-image: url(../assets/asparagus-barbecue-bbq-675951-mobile.jpg);
+}
+#slide2{
+	background-image: url(../assets/table-girl-woman-flower-interior-restaurant-722558-mobile-pxhere.com.jpg);
+}
+#slide3{
+	background-image: url(../assets/avocado-cooked-delicious-262959-mobile.jpg);
+}
+#slide4{
+	background-image: url(../assets/restaurant-dish-meal-food-plate-breakfast-99896-mobile-pxhere.com.jpg);
+}
+#slide5{
+	background-image: url(../assets/wine-white-glass-restaurant-celebration-meal-495777-mobile-pxhere.com.jpg);
+}
+
+.layer{
+	position: relative;
+	top:0;
+	width:100%;
+	height: 100%;
+	background-color: rgba(0,0,0,0.5);
+	z-index: 1;
+}
+
+
+.text{
+	width: 80%; 
+	position: absolute;
+	margin-top: 100px;
+	color: #fff;
+	z-index: 1;
+	word-wrap: break-word;
+}
+
+h1{
+	font-family: 'Antic Didone', serif;
+	font-size: 40px;
+	margin-left: 5%;
+}
+
+.text > p{
+	margin-left: 5%;
+	text-indent: 30px;
+	text-align: left;
+}
+
+/*sobre*/
+.container{
+	position: relative;
+	height: 100vh;
+	background-image: url(../assets/alcohol-architecture-bar-260922.jpg);
+	background-size: cover; 
+}
+
+/*menu*/
+
+#menu-title{ 
+	background-color: #f7eada;
+	font-size: 40px;
+	padding-bottom: 50px;
+	padding-top: 10px;
+	color: #a02c2c;
+	width: 100%;
+}
+
+.grid-container{
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 1fr 1fr 1fr 1fr;
+	background-color: #f7eada;
+	padding: 20px;
+	grid-gap: 20px;
+	justify-content: center;
+}
+
+.grid-item{
+	padding-bottom: 50px;
+}
+
+.item-title{
+	padding-bottom: 20px;	
+	font-size: 40px;
+	color: #d40000;
+}
+
+.item-name{
+	padding-bottom: 3px;
+	font-size: 20px;
+}
+
+.item-price{	
+	padding-bottom: 15px;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.item-title, .item-name, .item-price{
+	font-family: 'Cormorant Garamond', serif;
+	text-align: center;
+	width: 100%;
+}
+
+
+/*footer*/
+
+#footer{
+		background-color: #000;
+		color: #fff;
+	}
+
+	.footer-item{
+		width: 100%;
+		padding-top: 6%;
+		text-align: center;
+	}
+
+	span > i{
+		padding-top: 10px;
+		text-align: center;
+		font-size: 30px;
+		margin: 0 3%;
+		cursor: pointer;
+	}
+
+	.footer-row{
+		width: 100%;
+		padding-top: 6%;
+		padding-bottom: 6%;
+		text-align: center;
+		background-color: #000;
+		color: #fff;
+}
+
+/*scrollToTop*/
+.scrollToTop{
+	font-size: 4em;
+	color: #ff0202;
+	right: 40px;
+	top: 80vh;
+	position: fixed;
+	display: none;
+	z-index: 99;
+}
+
+.scrollToTop:hover{
+	color: #ffa735;
+	transition: 1s ease;
+}
+
+
+/*********desktop***********/
+
+@media screen and (min-width: 760px){
+	/*navbar*/
+	.top{
+		display: none;
+	}
+	
+	.hidden-menu{
+		margin-top: 0;
+		display: block;
+		height: 60px;
+	}
+	
+	.hidden-menu ul{
+		width: 100%;
+		display: flex;
+		align-items: center;
+	}
+	
+	.hidden-menu ul li{
+		list-style: none;
+	}
+	
+	.hidden-menu ul li a{
+		padding: 0 20px;
+		font-size: 20px;
+	}
+
+
+	/*slider*/
+	#slide1{
+		background-image: url(../assets/asparagus-barbecue-bbq-675951.jpg);
+	}
+	#slide2{
+		background-image: url(../assets/table-girl-woman-flower-interior-restaurant-722558-pxhere.com.jpg);
+	}
+	#slide3{
+		background-image: url(../assets/avocado-cooked-delicious-262959.jpg);
+	}
+	#slide4{
+		background-image: url(../assets/restaurant-dish-meal-food-plate-breakfast-99896-pxhere.com.jpg);
+	}
+	#slide5{
+		background-image: url(../assets/wine-white-glass-restaurant-celebration-meal-495777-pxhere.com.jpg);
+	}
+
+	.text{
+		width: 60%;
+	}
+
+	h1{
+		font-size: 70px;
+	}
+
+	.text > p{
+		font-size: 22px;
+	}
+
+	/*menu*/
+	.grid-container{
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: 1fr 1fr;
+	}
+
+	/*menu*/
+	#footer{
+		height: 30vh;
+	}
+
+	.footer-item{
+		width:50%;
+		float: left;
+		padding-top:4%;
+		padding-bottom: 0;
+	}
+
+	.footer-row{
+		padding-top: 4%;
+		padding-bottom: 3%;
+	}
+}
