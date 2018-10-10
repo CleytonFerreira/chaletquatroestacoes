@@ -22,7 +22,7 @@
 
 .visible-menu{
 	margin-top: 0px;
-	height: 180px;
+	height: auto;
 	transition: height 0.5s;
 }
 
@@ -98,8 +98,7 @@
 }
 
 
-.text{
-	width: 80%; 
+.text{ 
 	position: absolute;
 	margin-top: 100px;
 	color: #fff;
@@ -121,7 +120,6 @@ h1{
 
 /*sobre*/
 .container{
-	position: relative;
 	height: 100vh;
 	background-image: url(../assets/alcohol-architecture-bar-260922.jpg);
 	background-size: cover; 
