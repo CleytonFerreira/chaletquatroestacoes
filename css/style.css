@@ -4,6 +4,18 @@
 }
 
 
+@font-face{
+	font-family: "Cormorant Garamond";
+	src: local("Cormorant Garamond"), url(../fonts/CormorantGaramond-Light.ttf) format("truetype");
+	font-weight: lighter;
+}
+
+@font-face{
+	font-family: "Antic Didone";
+	src: local("Antic Didone"), url(../fonts/AnticDidone-Regular.ttf) format("truetype");
+}
+
+
 /*navbar*/
 .top{
 	width: 100%;
@@ -13,7 +25,6 @@
 
 .hidden-menu{
 	font-family: 'Cormorant Garamond', serif;
-	font-weight: lighter;
 	background-color: #630000;
 	width: 100%;
 	height: 0;
