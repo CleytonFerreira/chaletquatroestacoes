@@ -1,133 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant:wght@300;400&display=swap');
+
 * {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-@font-face {
-	font-family: "Cormorant Garamond";
-	src: local("Cormorant Garamond"), url(../fonts/CormorantGaramond-Light.ttf) format("truetype");
-	font-weight: lighter;
+body {
+    font-family: 'Cormorant', serif;
 }
 
-@font-face {
-	font-family: "Antic Didone";
-	src: local("Antic Didone"), url(../fonts/AnticDidone-Regular.ttf) format("truetype");
-}
-
-
-/*navbar*/
+/*menu*/
 .menu {
-	display: flex;
-	justify-content: center;
-	width: 100%;
-	background: #262626;
-	font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    background-color: #262626;
+    position: relative;
+}
+
+.menu .logo {
+	position: absolute;
+	font-size: 18px;
+    top: 20px;
+    left: 10px;
+    color: #fff;
+    white-space: nowrap;
+    z-index: 2;
 }
 
 .menu ul {
-	display: flex;
-	width: 80%;
-	background: inherit;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: 100%;
+    margin-top: -100%;
+    text-align: center;
+    background-color: inherit;
+    transition: .5s;
+}
+
+.menu ul.show {
+    /*soma do height de toggle-btn com o padding de toggle*/
+    margin-top: 50px;
 }
 
 .menu ul li {
-	list-style-type: none;
-	transition: .5s;
+    list-style-type: none;
+    transition: .5s;
 }
 
 .menu ul li:hover {
-	background: #630000;
+    background: #630000;
 }
 
 .menu ul li a {
-	display: block;
-	color: #fff;
-	text-decoration: none;
-	padding: 20px;
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    padding: 20px;
 }
 
-/* menu mobile */
+/*toggle*/
 .toggle {
-	display: none;
-	width: 100%;
-	padding: 10px 20px;
-	background: #1c1c1c;
-	z-index: 1;
+    display: flex;
+    width: 100%;
+    padding: 10px 20px;
+    background: #1c1c1c;
+    z-index: 1;
 }
 
 .toggle-btn {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	position: relative;
-	margin-left: auto;
-	width: 30px;
-	height: 30px;
-	background: transparent;
-	border: none;
-	outline: none;
-	cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    margin-left: auto;
+    width: 30px;
+    height: 30px;
+    background: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
 }
 
 .toggle-btn span {
-	position: absolute;
-	width: 80%;
-	height: 2px;
-	background: #fff;
-	transform-origin: center;
-	transition: .7s;
+    position: absolute;
+    width: 80%;
+    height: 2px;
+    background: #fff;
+    transform-origin: center;
+    transition: .7s;
 }
 
 .toggle-btn span:nth-child(1) {
-	top: 22.92%;
+    top: 22.92%;
 }
 
 .toggle-btn span:nth-child(2) {
-	top: 50%;
-	transform: translateY(-50%);
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 .toggle-btn span:nth-child(3) {
-	bottom: 22.92%;
+    bottom: 22.92%;
 }
 
-
 .toggle-btn.open span:nth-child(1) {
-	top: 50%;
-	transform: translateY(-50%) rotate(-45deg);
+    top: 50%;
+    transform: translateY(-50%) rotate(-45deg);
 }
 
 .toggle-btn.open span:nth-child(2) {
-	opacity: 0;
+    opacity: 0;
 }
 
 .toggle-btn.open span:nth-child(3) {
-	bottom: 50%;
-	transform: translateY(50%) rotate(45deg);
+    bottom: 50%;
+    transform: translateY(50%) rotate(45deg);
 }
 
+@media screen and (min-width: 48em) {
 
+    /*menu*/
+    .menu {
+        width: 100%;
+    }
+    
+    .menu ul {
+        flex-direction: row;
+        justify-content: flex-end;
+        width: inherit;
+        margin-top: 0;
+    }
 
+    .menu ul.show {
+        margin-top: 0;
+    }
 
-
-@media screen and (max-width: 768px) {
-	.toggle {
-		display: flex;
-	}
-
-	.menu ul {
-		flex-direction: column;
-		position: absolute;
-		width: 100%;
-		margin-top: -100%;
-		text-align: center;
-		transition: .5s;
-	}
-
-	.menu ul.show {
-		/*soma do height de toggle-btn com o padding de toggle*/
-		margin-top: 50px;
-	}
-
+    /*toggle*/
+    .toggle {
+        display: none;
+    }
 }
