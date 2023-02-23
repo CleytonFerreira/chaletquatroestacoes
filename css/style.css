@@ -238,7 +238,8 @@ body {
     padding: 8px 0;
 }
 
-.footer-item h4 {
+.footer-item h2 {
+    font-size: 1.3rem;
     padding-bottom: 8px;
 }
 
