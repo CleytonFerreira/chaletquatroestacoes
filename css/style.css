@@ -62,8 +62,8 @@ body {
     padding: 20px;
 }
 
-/*toggle*/
-.toggle {
+/*responsive-navbar*/
+.responsive-navbar {
     display: flex;
     width: 100%;
     padding: 10px 20px;
@@ -295,8 +295,8 @@ body {
         margin-top: 0;
     }
 
-    /*toggle*/
-    .toggle {
+    /*responsive-navbar*/
+    .responsive-navbar {
         display: none;
     }
 
