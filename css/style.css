@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Cormorant:wght@300;400&display=swap');
-
 * {
     margin: 0;
     padding: 0;
@@ -8,6 +6,7 @@
 
 body {
     font-family: 'Cormorant', serif;
+	font-display: swap;
 }
 
 /*navbar*/
@@ -306,7 +305,7 @@ body {
 
     .slider .top-layer h1,
     .slider .top-layer p {
-        padding: 30 80px;
+        padding: 30px 80px;
     }
 
     .slider .top-layer h1 {
