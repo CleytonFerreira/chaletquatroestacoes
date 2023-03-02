@@ -22,7 +22,7 @@ anchorTags.forEach(anchor => {
 });
 
 //Slider de imagens
-const images = document.querySelectorAll('.slider img');
+const images = document.querySelectorAll('.slider picture img');
 let index = 0;
 
 function changeImage() {

@@ -129,7 +129,7 @@ body {
     overflow: hidden;
 }
 
-.slider img {
+.slider picture img {
     position: absolute;
     top: 0;
     width: 100%;
@@ -140,7 +140,7 @@ body {
     transition: opacity 1s ease-in-out;
 }
 
-.slider img.active {
+.slider picture img.active {
     opacity: 1;
 }
 
