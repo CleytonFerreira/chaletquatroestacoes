@@ -7,12 +7,12 @@
 @font-face {
     font-family: 'Cormorant';
     src: url('../assets/fonts/Cormorant-VariableFont_wght.ttf') format('truetype');
+    font-display: swap;
 }
 
 
 body {
     font-family: 'Cormorant', serif;
-    font-display: swap;
 }
 
 /*navbar*/
