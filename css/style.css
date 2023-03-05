@@ -4,6 +4,12 @@
     box-sizing: border-box;
 }
 
+@font-face {
+    font-family: 'Cormorant';
+    src: url('../assets/fonts/Cormorant-VariableFont_wght.ttf') format('truetype');
+}
+
+
 body {
     font-family: 'Cormorant', serif;
     font-display: swap;
@@ -372,5 +378,4 @@ body {
     .footer-item {
         width: 50%;
     }
-
 }
