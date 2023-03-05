@@ -6,7 +6,7 @@
 
 body {
     font-family: 'Cormorant', serif;
-	font-display: swap;
+    font-display: swap;
 }
 
 /*navbar*/
@@ -42,7 +42,7 @@ body {
 }
 
 .navbar ul.show {
-    top: 100%;    
+    top: 100%;
 }
 
 .navbar ul li {
@@ -68,7 +68,7 @@ body {
     width: 100%;
     padding: 10px 20px;
     background: #1c1c1c;
-    z-index: 0;
+    z-index: 1;
 }
 
 .toggle-btn {
@@ -198,8 +198,8 @@ body {
 
 #sobre p {
     font-size: 1.3rem;
-	text-indent: 1.4rem;
-	text-align: left;
+    text-indent: 1.4rem;
+    text-align: left;
 }
 
 
@@ -255,36 +255,61 @@ body {
 }
 
 .footer span {
-    padding: 0px 16px;
+    padding: 16px;
+}
+
+.footer span a {
+    text-decoration: none;
+}
+
+.footer span .icon {
+    width: 1.5rem;
+    height: 1.5rem;
 }
 
 /*Botão voltar ao topo*/
 .scroll-top-btn {
     display: none;
+    justify-content: center;
+    align-items: center;
     position: fixed;
+    background: red;
+    border-radius: 50%;
+    height: 2rem;
+    width: 2rem;
     right: 20px;
     top: 80vh;
-    font-size: 2em;
-    color: #8f8f8f;
+    background-color: #8f8f8f;
+}
+
+.scroll-top-btn::after {
+    align-self: center;
+    content: "";
+    width: 0.7rem;
+    height: 0.7rem;
+    border-top: 3px solid #fff;
+    border-left: 3px solid #fff;
+    transform: rotate(45deg);
 }
 
 .scroll-top-btn.visible {
-    display: block;
+    display: flex;
 }
 
 .scroll-top-btn:hover {
-    color: #414141;
-    transition: 1s ease;
+    background-color: #414141;
+    transition: .5s ease;
 }
 
 @media screen and (min-width: 48em) {
+
     /*navbar*/
     .navbar ul {
         flex-direction: row;
         justify-content: flex-end;
         top: 0;
     }
-    
+
     .navbar ul.show {
         top: 0;
     }
@@ -292,7 +317,7 @@ body {
     .navbar .logo {
         position: initial;
     }
-    
+
     /*responsive-navbar*/
     .responsive-navbar {
         display: none;

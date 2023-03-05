@@ -5,6 +5,12 @@ const navbarUl = document.querySelector('.navbar > ul');
 toggleBtn.addEventListener('click', function () {
   toggleBtn.classList.toggle('open');
   navbarUl.classList.toggle('show');
+
+  if (toggleBtn.getAttribute('aria-expanded') === 'false') {
+    toggleBtn.setAttribute('aria-expanded', 'true');
+  } else {
+    toggleBtn.setAttribute('aria-expanded', 'false');
+  }
 });
 
 //Rolagem suave da página
