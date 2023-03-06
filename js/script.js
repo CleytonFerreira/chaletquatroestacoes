@@ -14,7 +14,7 @@ toggleBtn.addEventListener('click', function () {
 });
 
 //Rolagem suave da página
-const anchorTags = document.querySelectorAll('a[href^="#"]');
+const anchorTags = document.querySelectorAll('a');
 
 anchorTags.forEach(anchor => {
   anchor.addEventListener('click', function (e) {
@@ -28,7 +28,7 @@ anchorTags.forEach(anchor => {
 });
 
 //Slider de imagens
-const images = document.querySelectorAll('.slider picture img');
+const images = document.querySelectorAll('.slider > picture > img');
 let index = 0;
 
 function changeImage() {
