@@ -4,13 +4,6 @@
     box-sizing: border-box;
 }
 
-@font-face {
-    font-family: 'Cormorant';
-    src: url('../assets/fonts/Cormorant-VariableFont_wght.ttf') format('truetype');
-    font-display: swap;
-}
-
-
 body {
     font-family: 'Cormorant', serif;
 }
@@ -279,13 +272,12 @@ body {
     justify-content: center;
     align-items: center;
     position: fixed;
-    background: red;
-    border-radius: 50%;
-    height: 2rem;
-    width: 2rem;
-    right: 20px;
     top: 80vh;
+    right: 20px;
+    width: 2rem;
+    height: 2rem;
     background-color: #8f8f8f;
+    border-radius: 50%;
 }
 
 .scroll-top-btn::after {
