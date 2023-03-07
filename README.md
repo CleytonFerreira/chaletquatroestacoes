@@ -1,6 +1,6 @@
 ## Chalet Quatro Estações
 
-![Chalet Quatro Estações](https://www.dropbox.com/s/2qru3bss77e1z4j/chalet-quatro-estacoes.png?dl=0)
+<img src="https://www.dropbox.com/s/2qru3bss77e1z4j/chalet-quatro-estacoes.png?dl=0" alt="Chalet Quatro Estações"></img>
 
 Modelo de landing page responsiva para restaurante.
 
