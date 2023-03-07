@@ -51,7 +51,6 @@ window.addEventListener('scroll', function () {
 });
 
 scrollTopBtn.addEventListener('click', function (e) {
-  e.preventDefault();
   window.scroll({
     top: 0,
     left: 0,
