@@ -8,7 +8,7 @@ Criado com HTML, CSS e JS puros
 
 HTML estruturado para leitores de tela
 
-Ótimos resultados na auditoria da [Lighthouse](https://developer.chrome.com/docs/lighthouse/overview/)
+Bons resultados no [PageSpeed Insights](https://pagespeed.web.dev/)
 
 Créditos das imagens:
 
