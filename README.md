@@ -1,6 +1,6 @@
 ## Chalet Quatro Estações
 
-[![chalet-quatro-estacoes.png](https://i.postimg.cc/7YWjfj4v/chalet-quatro-estacoes.png)](https://postimg.cc/Czbc2PdJ)
+![chalet-quatro-estacoes.png](https://lh3.googleusercontent.com/pw/AJFCJaV-6D7sKVH43JhUT4ysyiNcPsG1Xv-uNaaw2EbcndN0rsDFbo_e2p3QgepIJ5LyBIpBUQj8izM3MnM10cCC76RVCin1FTQAa35bktv827gGrt4yYmm3ExUmjjsHU_h4_b8e5nukC9fJVBPAIekLDKk=w966-h550-s-no?authuser=0)
 
 Modelo de landing page responsiva para restaurante.
 
